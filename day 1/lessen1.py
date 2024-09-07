@@ -2,7 +2,7 @@ from turtle import*
 
 #square
 width(5)
-speed(120)
+speed(5)
 color("blue")
 forward(200)
 
@@ -112,7 +112,3 @@ end_fill()
 
 
 exitonclick()
-
-
-
-

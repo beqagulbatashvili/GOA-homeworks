@@ -1,1 +1,8 @@
 #full stack development-ი იყოფა ორ ნაწილიად frond end და back end-ად.
+#front end development-ი არის ის რასაც ვებ საიტზე ვხედავთ.
+#back end development-ი არის ის სადაც იმფორმაციას ვინახავთ
+
+#front end development-ი იყოპა სამ ნაწილად HTML,CSS და javascript
+#HTML-ი არის ტექნოლოგია რომელსაც ვიყენებთ ვებ-საიტების შესაქმნელად.
+#CSS-ის დახმარებით ვებ-საიტს ვაძლევთ სტილს და დიზაინს.
+#JAVASCRIPT-ის დახმარებით კი ვებ-საიტს ვაძლევთ ფუნქჩიებს

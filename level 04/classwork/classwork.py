@@ -1,0 +1,3 @@
+name="beqagulbatashvili"
+
+print(name)

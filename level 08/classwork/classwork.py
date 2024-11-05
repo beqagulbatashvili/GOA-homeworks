@@ -1,0 +1,11 @@
+#ცვლადები
+my_name="beqa"
+my_surname="gulbatashvili"
+my_age=13
+my_height=1.69
+my_weight=70
+print(my_name)
+print(my_surname)
+print(my_age)
+print(my_height)
+print(my_weight)

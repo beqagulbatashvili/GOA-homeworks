@@ -1,0 +1,5 @@
+ჯერ უნდა შევქმნათ input-ი და label-ი.შემდეგ input-ს უნდა მივანიჭოთ id და შემდეგ label-ში უნდა მივუთითოთ ის აიდი რაც input-ს მივანიჭეთ
+
+მაგ:
+<label for="txt">enter name</label>
+<input type="text" id="txt">

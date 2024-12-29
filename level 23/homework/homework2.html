@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ვებ-გვერდი</title>
+</head>
+<body>
+
+    <!-- ნავიგაციის მენიუ -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">მაჩვენებელი სექცია 1</a></li>
+                <li><a href="#section2">მაჩვენებელი სექცია 2</a></li>
+                <li><a href="#section3">მაჩვენებელი სექცია 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <!-- მთავარი ნაწილი -->
+    <main>
+
+        <section id="section1">
+            <h1>სექცია 1</h1>
+            <p>ეს არის პირველი სექცია.</p>
+            <br>
+            <ul>
+                <li>დალაგებული სია 1</li>
+                <li>დალაგებული სია 2</li>
+                <li>დალაგებული სია 3</li>
+            </ul>
+            <br>
+            <p>ამ ნაწილში შეგიძლიათ ნახოთ სურათები:</p>
+            <img src="https://avatars.mds.yandex.net/i?id=85fd6f9294ab8a09c33eb3b0d458e1b472c0a077-12597979-images-thumbs&n=13" alt="სურათი 1">
+            <img src="https://avatars.mds.yandex.net/i?id=3875e451275d24b5ab76574535885efb7cdfbc7a-10792024-images-thumbs&n=13" alt="სურათი 2">
+            <img src="https://avatars.mds.yandex.net/i?id=9bc63d62a85d298c4c1e35db9dfd8861229b7a24-3976351-images-thumbs&n=13" alt="სურათი 3">
+            <br><br>
+            <img src="https://avatars.mds.yandex.net/i?id=df6f0a9b59a9738610c34882daea14963b51056a-8249766-images-thumbs&n=13" alt="სურათი 4">
+            <img src="https://avatars.mds.yandex.net/i?id=ab3065f3ee56c78c9aceb95f47c1637470bf184a-8196710-images-thumbs&n=13" alt="სურათი 5">
+            <img src="https://avatars.mds.yandex.net/i?id=df6f0a9b59a9738610c34882daea14963b51056a-8249766-images-thumbs&n=13" alt="სურათი 6">
+        </section>
+
+        <section id="section2">
+            <p>ეს არის მეორე სექცია.</p>
+            <ol>
+                <li>დალაგებული სია</li>
+                <li>დალაგებული სია </li>
+                <li>დალაგებული სია</li>
+            </ol>
+            <br>
+            <hr>
+            <p>ეს არის დაულაგებელი სია:</p>
+            <ul>
+                <li>დაულაგებელი სია </li>
+                <li>დაულაგებელი სია </li>
+                <li>დაულაგებელი სია </li>
+            </ul>
+            <br>
+            <hr>
+            <p>ვიდეო:</p>
+            <video width="320" height="240" controls>
+                <source src="countdown.mp4" type="video/mp4">
+                თქვენი ბრაუზერი არ უჭერს მხარს ამ ფორმატს.
+            </video>
+        </section>
+
+        <section id="section3">
+            <p>ეს არის მესამე სექცია.</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mp3">
+                თქვენი ბრაუზერი არ უჭერს მხარს ამ ფორმატს.
+            </audio>
+            <audio controls>
+                <source src="audio.wav" type="audio/wav">
+                თქვენი ბრაუზერი არ უჭერს მხარს ამ ფორმატს.
+            </audio>
+            <br>
+            <hr>
+        </main>
+        <footer>
+            <form>
+                <label for="name">სახელი:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">ელ.ფოსტა:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="phone">ტელეფონი:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="dob">დაბადების თარიღი:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="message">წერილი:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <label for="country">სახელმწიფო:</label>
+                <select id="country" name="country">
+                    <option value="georgia">საქართველო</option>
+                    <option value="usa">ამერიკა</option>
+                    <option value="uk">გაერთიანებული სამეფო</option>
+                </select><br><br>
+
+                <input type="submit" value="დადასტურება">
+            </form>
+
+        <a href="#section1">დაბრუნება დასაწყისში</a>
+    </footer>
+
+</body>
+</html>

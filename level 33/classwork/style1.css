@@ -1,0 +1,29 @@
+
+#para1 {
+    color: rgb(255, 0, 0); /* წითელი */
+    background-color: rgb(255, 255, 255); /* თეთრი */
+}
+
+
+#para2 {
+    color: rgb(0, 255, 0); /* მწვანე */
+    background-color: rgb(0, 0, 0); /* შავი */
+}
+
+
+#para3 {
+    color: rgb(0, 0, 255); /* ლურჯი */
+    background-color: rgb(255, 255, 0); /* ყვითელი */
+}
+
+
+#para4 {
+    color: rgb(255, 165, 0); /* ნარინჯისფერი */
+    background-color: rgb(0, 255, 255); /* ცისფერი */
+}
+
+
+#para5 {
+    color: rgb(128, 0, 128); /* იისფერი */
+    background-color: rgb(255, 192, 203); /* ვარდისფერი */
+}

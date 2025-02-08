@@ -1,0 +1,10 @@
+#parent-div{
+    height: 1000px;
+    width: 1000px;
+    background-color: #00ff00;
+}
+#child-div{
+    height: 15%;
+    width: 20%;
+    background-color: #000000;
+}

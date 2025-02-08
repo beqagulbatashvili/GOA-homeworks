@@ -1,0 +1,20 @@
+#red-box {
+    width: 400px;
+    height: 400px;
+    background-color: #ff0000;  
+    color: #ffffff;  
+}
+
+#green-box {
+    width: 200px;
+    height: 100px;
+    background-color: #00ff00;
+    color: #000000; 
+}
+
+#blue-box {
+    width: 50px;
+    height: 100px;
+    background-color: #0000ff; 
+    color: #ffffff;  
+}

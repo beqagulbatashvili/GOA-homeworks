@@ -1,0 +1,14 @@
+/* ღილაკისთვის */
+#myButton {
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+
+/* პარაგრაფებისთვის */
+.myParagraph {
+    color: white;
+    background-color: green;
+    border: 1px solid black;
+}

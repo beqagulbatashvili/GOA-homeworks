@@ -1,0 +1,36 @@
+p {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    text-decoration: overline;
+}
+span {
+    text-decoration: line-through;
+}
+h2 {
+    text-decoration: underline overline;
+}
+a {
+    text-decoration: underline dashed;
+}
+p.warning {
+    text-decoration: underline wavy;
+}
+nav a {
+    text-transform: uppercase;
+}
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px black;
+}
+p {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+.highlight {
+    text-shadow: 2px 2px 4px red; /* Use any color you like */
+}

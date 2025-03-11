@@ -1,0 +1,15 @@
+.box {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.first {
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.second {
+    background-color: red;
+    margin-top: -30px;
+}

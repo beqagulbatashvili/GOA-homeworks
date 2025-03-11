@@ -1,0 +1,28 @@
+body {
+    background-color: #a1c56e;
+
+}
+
+table {
+    border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+tr:first-child {
+    background: #f7e37b;
+    font-weight: bold;
+}
+
+tr:first-child td {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}

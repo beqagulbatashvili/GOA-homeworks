@@ -1,0 +1,26 @@
+
+table {
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    text-align: left;
+}
+
+th {
+    background-color: #008060;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.highlight {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #008060;
+}

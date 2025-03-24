@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.item {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.special {
+    align-self: flex-end;
+    flex-grow: 2;
+}

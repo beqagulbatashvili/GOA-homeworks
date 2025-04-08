@@ -1,0 +1,115 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container, .div-translate, .card-press, .modal-slide, .tooltip, .zoom-bg {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* 1. Scale an image up when hovered */
+.image-scale {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.image-scale:hover {
+    transform: scale(1.1);
+}
+
+/* 2. Rotate a button 45 degrees on click */
+.button-rotate {
+    transition: transform 0.2s ease;
+}
+.button-rotate:active {
+    transform: rotate(45deg);
+}
+
+/* 3. Translate a div 50px to the right on hover */
+.div-translate {
+    transition: transform 0.3s ease;
+}
+.div-translate:hover {
+    transform: translateX(50px);
+}
+
+/* 4. Continuously rotate an icon using animation */
+.icon-rotate {
+    font-size: 2rem;
+    animation: spin 2s linear infinite;
+}
+
+/* 5. Scale down a card slightly on hover for a "press" effect */
+.card-press {
+    transition: transform 0.2s ease;
+}
+.card-press:hover {
+    transform: scale(0.97);
+}
+
+/* 6. Translate a modal from bottom to center on open */
+.modal-slide {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: transform 0.3s ease-out;
+}
+.modal-slide.open {
+    transform: translate(-50%, 0);
+}
+
+/* 7. Rotate a loading spinner indefinitely */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* 8. Translate a tooltip slightly upward when visible */
+.tooltip {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.tooltip.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 9. Scale a background image slightly for a zoom effect */
+.zoom-bg {
+    height: 200px;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+.zoom-bg:hover {
+    transform: scale(1.05);
+}
+
+/* 10. Rotate a text element 180 degrees on toggle */
+.text-rotate {
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+.text-rotate.toggled {
+    transform: rotate(180deg);
+}

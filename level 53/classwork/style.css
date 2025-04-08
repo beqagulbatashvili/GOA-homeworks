@@ -1,0 +1,11 @@
+.elementi {
+    width: 300px;
+    height: 150px;
+    background: green;
+    border: 2px solid black;
+    border-radius: 999px 20px 20px 999px;
+}
+
+.elementi:hover {
+    transform: rotate(40deg) scale(2) translateY(200px);
+}

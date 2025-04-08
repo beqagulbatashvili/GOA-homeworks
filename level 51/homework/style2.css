@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+#element1{
+    background-color: blue;
+}
+#element2{
+    background-color: green;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+#element3{
+    background-color: yellow;
+    margin-top: 40px;
+    margin-left: 200px;
+}

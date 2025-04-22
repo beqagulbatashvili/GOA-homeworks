@@ -1,0 +1,18 @@
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    animation: moveRight 2s linear infinite alternate;
+}
+
+@keyframes moveRight {
+    from {
+    left: 20px;
+    }
+    to {
+    left: 300px;
+    }
+}

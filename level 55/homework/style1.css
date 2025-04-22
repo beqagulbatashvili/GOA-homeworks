@@ -1,0 +1,33 @@
+.animating-circle {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    animation: moveAndScale 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveAndScale {
+    0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    }
+    25% {
+    transform: translate(100px, -50px) scale(1.5);
+    opacity: 0.8;
+    }
+    50% {
+    transform: translate(200px, -100px) scale(2);
+    opacity: 0.6;
+    }
+    75% {
+    transform: translate(300px, -50px) scale(1.5);
+    opacity: 0.8;
+    }
+    100% {
+    transform: translate(400px, 0) scale(1);
+    opacity: 1;
+    }
+}

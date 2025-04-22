@@ -1,0 +1,15 @@
+.color-changing-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: changeColor 5s ease infinite alternate;
+}
+
+@keyframes changeColor {
+    from {
+    background-color: blue;
+    }
+    to {
+    background-color: red;
+    }
+}

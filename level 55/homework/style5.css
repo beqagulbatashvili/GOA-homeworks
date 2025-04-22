@@ -1,0 +1,37 @@
+.rotating-element {
+    width: 80px;
+    height: 30px;
+    background-color: lightgreen;
+    color: white;.rotating-element {
+        width: 80px;
+        height: 30px;
+        background-color: lightgreen;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        animation: rotate360 3s linear infinite;
+    }
+    
+    @keyframes rotate360 {
+        from {
+        transform: rotate(0deg);
+        }
+        to {
+        transform: rotate(360deg);
+        }
+    }
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    animation: rotate360 3s linear infinite;
+}
+
+@keyframes rotate360 {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}

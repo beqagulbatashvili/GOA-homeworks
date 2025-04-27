@@ -1,0 +1,54 @@
+.delayed {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+
+.sequence {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+.sequence:nth-child(1) {
+    animation: fadeIn 2s 0s forwards;
+}
+
+.sequence:nth-child(2) {
+    animation: fadeIn 2s 1s forwards;
+}
+
+.sequence:nth-child(3) {
+    animation: fadeIn 2s 2s forwards;
+}
+
+.fade {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    opacity: 1;
+    animation: fadeEffect 10s forwards;
+}
+
+@keyframes fadeEffect {
+    0% {
+    opacity: 1;
+    }
+    100% {
+    opacity: 0;
+    }
+}

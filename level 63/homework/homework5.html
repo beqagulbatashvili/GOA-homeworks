@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>document</title>
+<style>
+#status {
+    color: gray;
+}
+.online {
+    color: green;
+}
+</style>
+</head>
+<body>
+
+<p id="status">Offline</p>
+<button id="statusButton">შეცვლა ონლაინზე</button>
+
+<script>
+    document.getElementById("statusButton").onclick = function() {
+    var statusElement = document.getElementById("status");
+    statusElement.innerHTML = "Online";
+    statusElement.className = "online";
+};
+</script>
+
+</body>
+</html>

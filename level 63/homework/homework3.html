@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>document</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button id="colorButton">წითლად შეცვლა</button>
+
+    <script>
+        document.getElementById("colorButton").onclick = function() {
+            document.getElementById("title").style.cssText = "color: red;";
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(233, 26%, 24%);
+  text-align: center;
+  padding: 40px 20px;
+}
+.features h1 {
+  font-size: 1.75rem;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.features p {
+  font-size: 0.95rem;
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+/* Card Container */
+.cards {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Individual Cards */
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  margin-bottom: 1.5rem;
+}
+.card h3 {
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+.card p {
+  color: hsl(233, 8%, 62%);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

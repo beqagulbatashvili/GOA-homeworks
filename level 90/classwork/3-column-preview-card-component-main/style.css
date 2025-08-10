@@ -1,0 +1,88 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background: hsl(0, 0%, 95%);
+    color: white;
+    }
+
+    /* Container */
+    .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    margin: 40px auto;
+    }
+
+    /* Card Styles */
+    .card {
+    padding: 40px;
+    text-align: left;
+    }
+
+    .card img {
+    margin-bottom: 20px;
+    }
+
+    .card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    }
+
+    .card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    }
+
+    /* Buttons */
+    .card a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    .card1 {
+    background-color: hsl(31, 77%, 52%);
+    }
+    .card1 a {
+    color: hsl(31, 77%, 52%);
+    }
+
+    .card2 {
+    background-color: hsl(184, 100%, 22%);
+    }
+    .card2 a {
+    color: hsl(184, 100%, 22%);
+    }
+
+    .card3 {
+    background-color: hsl(179, 100%, 13%);
+    }
+    .card3 a {
+    color: hsl(179, 100%, 13%);
+    }
+
+    /* Hover Effects */
+    .card a:hover {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }

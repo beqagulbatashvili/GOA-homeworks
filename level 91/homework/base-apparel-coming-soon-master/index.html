@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coming Soon | Base Apparel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container" id="main-content">
+    <header>
+      <img src="images/logo.svg" alt="Base Apparel" class="logo">
+    </header>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/illustration-desktop.svg">
+        <img src="images/illustration-mobile.svg" alt="Illustration of product" class="illustration">
+      </picture>
+      <div class="text-block">
+        <h1>We're launching soon</h1>
+        <p>Subscribe and get notified</p>
+        <form id="notify-form">
+          <input type="email" id="notify-email" name="email"
+                placeholder="Enter your email address" required>
+          <button type="submit">Notify Me</button>
+          <small id="notify-error" class="error"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="success hidden" id="success-message">
+    <img src="images/logo.svg" alt="Base Apparel" class="logo">
+    <div class="success-content">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="subscriber-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button id="success-dismiss">Dismiss</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

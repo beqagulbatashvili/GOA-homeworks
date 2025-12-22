@@ -1,0 +1,40 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.list {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+    }
+
+.btn:hover {
+    background-color: #4338ca;
+}

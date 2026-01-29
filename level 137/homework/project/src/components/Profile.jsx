@@ -6,11 +6,11 @@ function Profile() {
     return (
         <div>
             <h1>Profile Page</h1>
-            <button onClick={() => navigate("/")}>
+            <button onClick={() => navigate(-1)}>
                 Back to Home
             </button>
         </div>
     )
-    }
+}
 
 export default Profile

@@ -1,0 +1,17 @@
+backend and its types
+backend არის ვებ აპლიკაციის ის ნაწილი რომელიც მომხმარებლისთვის არ ჩანს ის აკეთებს ლოგიკას მონაცემების დამუშავებას და უსაფრთხოებას
+
+backend types
+server side backend მუშაობს სერვერზე მაგალითად Node js Django Flask cloud backend მუშაობს cloud გარემოში მაგალითად Firebase Supabase
+
+request response
+request არის მოთხოვნა რომელსაც frontend აგზავნის სერვერზე მაგალითად მონაცემების მოთხოვნა response არის პასუხი რომელსაც server აბრუნებს frontend ზე მაგალითად მონაცემები ან შეცდომის შეტყობინება
+
+database and its types
+database არის ადგილი სადაც ინფორმაცია ინახება მაგალითად მომხმარებლები პოსტები ქულები
+
+database types
+relational database აქვს ცხრილები მაგალითად MySQL PostgreSQL non relational database აქვს document ან object სტრუქტურა მაგალითად MongoDB
+
+connection among frontend server and database
+frontend აგზავნის request ს server ზე server იღებს request ს და უკავშირდება database ს database აბრუნებს მონაცემებს server ზე server აგზავნის response ს frontend ზე

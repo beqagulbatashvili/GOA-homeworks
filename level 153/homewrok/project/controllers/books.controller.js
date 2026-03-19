@@ -1,11 +1,6 @@
-import express from "express"
-import ReadFile from "./utils/ReadFile.js"
+import ReadFile from "../utils/ReadFile.js"
 
-const app = express()
-
-app.use(express.json())
-
-app.get("/books", async function (req, res) {
+export async function getBooks(req, res){
 
     const books = await ReadFile("./books.json")
 
@@ -45,11 +40,10 @@ app.get("/books", async function (req, res) {
     }
 
     res.status(200).json(result)
+}
 
-})
 
-
-app.get("/books/:id", async function (req, res) {
+export async function getBookById(req, res){
 
     const books = await ReadFile("./books.json")
 
@@ -64,11 +58,10 @@ app.get("/books/:id", async function (req, res) {
     }
 
     res.status(200).json(book)
+}
 
-})
 
-
-app.post("/books", async function (req, res) {
+export async function createBook(req, res){
 
     const books = await ReadFile("./books.json")
 
@@ -77,9 +70,44 @@ app.post("/books", async function (req, res) {
     books.push(newBook)
 
     res.status(201).json(newBook)
+}
 
-})
 
-app.listen(3000, function(){
-    console.log("Server running on port 3000")
-})
+export async function updateBook(req, res){
+
+    const books = await ReadFile("./books.json")
+
+    const id = Number(req.params.id)
+
+    const index = books.findIndex(function(item){
+        return item.id === id
+    })
+
+    if(index === -1){
+        return res.status(404).json({message: "Book not found"})
+    }
+
+    books[index] = req.body
+
+    res.status(200).json(books[index])
+}
+
+
+export async function deleteBook(req, res){
+
+    const books = await ReadFile("./books.json")
+
+    const id = Number(req.params.id)
+
+    const index = books.findIndex(function(item){
+        return item.id === id
+    })
+
+    if(index === -1){
+        return res.status(404).json({message: "Book not found"})
+    }
+
+    const deleted = books.splice(index, 1)
+
+    res.status(200).json(deleted[0])
+}

@@ -1,0 +1,15 @@
+in mongoDB:
+1:
+use main_db
+db.student_collection.find({ "dimensions.surname": "gvari" })
+db.student_collection.find({ "dimensions.age": 100 })
+
+
+
+2:
+use main_db
+db.student_collection.find({ id: { $lte: 20 } })
+db.student_collection.find({ price: { $gt: 100 } })
+db.student_collection.find({ "dimensions.depth": { $lt: 100 } })
+db.student_collection.find({ "dimensions.height": { $gte: 50 } })
+

@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 2500,
+        "stock": 5,
+        "rating": 4.8,
+        "createdAt": "2026-04-14"
+    }
+]

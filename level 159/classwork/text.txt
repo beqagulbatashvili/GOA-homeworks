@@ -1,0 +1,13 @@
+1
+db.collection.find({}, { price: 1, rating: 1, _id: 0 })
+db.collection.find({}, { dimensions: 0, tags: 0 })
+db.collection.find({ price: { $gt: 100 } }).sort({ price: -1 })
+
+
+2
+db.collection.countDocuments({ price: { $gt: 50 } })
+db.collection.countDocuments({ rating: { $lte: 4 } })
+db.collection.find({ home: { $exists: true } })
+db.collection.find({ home: { $exists: false } }).limit(5)
+
+

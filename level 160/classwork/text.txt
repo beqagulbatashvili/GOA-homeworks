@@ -1,0 +1,9 @@
+1
+use main_db
+db.student_collection.find({tags: "pUcn"})
+db.student_collection.find({tags: ["pUcn", "Igjn", "XZVH", "This info was added to all of the documents"]})
+
+
+2
+db.student_collection.find({ tags: { $all: ["zaJe", "pUcn"] } })
+

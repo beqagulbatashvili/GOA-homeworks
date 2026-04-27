@@ -1,0 +1,17 @@
+1) 
+db.products.insertMany([{name:"Laptop",price:1200,category:"Electronics"},{name:"Phone",price:800,category:"Electronics"},{name:"Table",price:150,category:"Furniture"},{name:"Shoes",price:100,category:"Clothing"}])
+
+2) 
+db.students.insertMany([{name:"Nika",age:15,courses:["Math","English"]},{name:"Ana",age:14,courses:["Biology","Chemistry"]},{name:"Giorgi",age:16,courses:["History","Geography"]}])
+
+3) 
+db.users.updateOne({name:"Ana"},{$set:{age:25}})
+
+4) 
+db.users.updateOne({name:"Giorgi"},{$set:{city:"Batumi"}})
+
+5) 
+db.customers.updateOne({name:"David"},{$set:{"address.city":"Kutaisi"}})
+
+6) 
+db.customers.updateOne({name:"Ana"},{$set:{"address.street":"Chavchavadze"}})

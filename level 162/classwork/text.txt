@@ -1,0 +1,13 @@
+1.
+db.film_collection.updateOne({ userRating: { $gt: 9 } }, { $set: { title: "New Title" } })
+db.people_collection.insertMany([{ name: "Giorgi", age: 25 }, { name: "Nino", age: 22 }, { name: "Luka", age: 30 }])
+
+
+
+2.
+db.students.updateOne({ name: "Giorgi" }, { $set: { age: 15 } })
+db.movies.updateOne({ title: "Inception" }, { $set: { rating: 9.5 } })
+
+db.students.updateOne({ name: "Giorgi" }, { $push: { tags: "smart" } })
+db.movies.updateOne({ title: "Inception" }, { $push: { genres: "Sci-Fi" } })
+

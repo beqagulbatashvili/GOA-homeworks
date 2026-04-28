@@ -1,0 +1,13 @@
+2.
+db.collection.updateMany({ price: { $gt: 400 } }, { $set: { in_stock: false } })
+db.collection.updateMany({ price: { $lt: 100 } }, { $set: { discount: 10 } })
+db.collection.updateMany({}, { $mul: { price: 1.05 } })
+db.collection.updateMany({ category: { $exists: false } }, { $set: { category: "general" } })
+db.collection.updateMany({ rating: null }, { $unset: { rating: "" } })
+
+3.
+db.collection.findOneAndUpdate({ in_stock: true }, { $set: { in_stock: false } }, { returnDocument: "after" })
+db.collection.findOneAndUpdate({}, { $inc: { price: 50 } }, { sort: { price: -1 }, returnDocument: "after" })
+db.collection.findOneAndUpdate({ rating: { $lt: 2 } }, { $set: { status: "low_quality" } }, { returnDocument: "after" })
+db.collection.findOneAndUpdate({ tags: { $exists: true } }, { $pop: { tags: 1 } }, { returnDocument: "after" })
+db.collection.findOneAndUpdate({}, { $set: { reviewed: true } }, { returnDocument: "before" })

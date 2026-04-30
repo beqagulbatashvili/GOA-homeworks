@@ -1,0 +1,12 @@
+1.
+db.users.deleteOne({ name: "Giorgi" })
+db.products.deleteOne({ price: { $gt: 500 } })
+
+db.students.deleteMany({ age: { $lt: 18 } })
+db.orders.deleteMany({ status: "cancelled" })
+
+2.
+db.people.replaceOne({ name: "Nika" }, { name: "Nika", age: 20, version: 5.34 })
+db.people.replaceOne({ name: "Ana" }, { name: "Ana", age: 18, version: 3.27 })
+db.people.replaceOne({ name: "Giorgi" }, { name: "Giorgi", age: 25, version: 6.34})
+

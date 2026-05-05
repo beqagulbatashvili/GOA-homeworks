@@ -1,0 +1,12 @@
+1.
+db.users.createIndex({ name: 1 })
+db.products.createIndex({ price: -1 })
+db.products.createIndex({ category: 1 })
+
+2.
+db.employee.find({ salary: { $gt: 3000 } }).explain("executionStats")
+"executionTimeMillis: 14"
+db.employee.createIndex({ salary: 1 })
+db.employee.find({ salary: { $gt: 3000 } }).explain("executionStats")
+"executionTimeMillis: 0"
+

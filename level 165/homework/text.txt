@@ -1,0 +1,13 @@
+1.
+db.cars.find({ year: { $gt: 2015 } }).explain("executionStats")
+
+2.
+db.cars.find({ brand: "Toyota" }).explain("executionStats")
+
+3.
+db.cars.createIndex({ year: 1 })
+db.cars.find({ year: { $gt: 2015 } }).explain("executionStats")
+
+4.
+db.cars.createIndex({ brand: 1, year: 1 })
+db.cars.find({ brand: "Toyota", year: { $gt: 2015 } }).explain("executionStats")

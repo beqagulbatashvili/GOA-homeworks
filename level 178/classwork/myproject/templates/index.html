@@ -1,0 +1,9 @@
+{% for user in arr %}
+
+    {% if user.age >= 18 %}
+        <p>{{ user.name }} {{ user.surname }} is adult</p>
+    {% else %}
+        <p>{{ user.name }} {{ user.surname }} is not adult</p>
+    {% endif %}
+
+{% endfor %}
